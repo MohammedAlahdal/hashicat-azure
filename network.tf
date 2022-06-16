@@ -1,15 +1,7 @@
 
-provider "azurerm" {
-  features {}
-}
-
-resource "azurerm_resource_group" "myresourcegroup" {
-  name     = "${var.prefix}-workshop"
-  location = var.location
-
-  tags = {
-    environment = "Production"
-  }
+resource "azurerm_resource_group" "testingmodule" {
+  name     = "my-resources-network-module"
+  location = "Germany West Central"
 }
 
 module "network" {
