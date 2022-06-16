@@ -1,8 +1,5 @@
-p
 
-
-
-der "azurerm" {
+provider "azurerm" {
   features {}
 }
 
